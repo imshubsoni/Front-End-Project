@@ -1,0 +1,82 @@
+
+.header__heading-div{
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	.header__pri-heading{
+		color: $color-white;
+		text-transform: uppercase;
+	
+		backface-visibility: hidden;
+		margin-bottom: 6rem;
+
+		.header__main-heading{
+			display: block;
+			font-weight: 400;
+			font-size: 6rem;
+			letter-spacing: 3.5rem;
+			animation: fadeleft;
+			animation-duration: 0.88s;
+
+			@include respond(phone){
+				letter-spacing: 1px;
+				font-size: 5rem;
+			}
+		}
+		
+		.header__line-heading{
+			display: block;
+			font-size: 2rem;
+			letter-spacing: 1.74rem;
+			font-weight: 700;
+			animation: faderight;
+			animation-duration: 0.88s;
+
+			@include respond(phone){
+				letter-spacing: 0.5rem;
+			}
+		}
+	}
+}
+
+.about__sec-heading{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+	transition: all 0.4s;
+	
+	@include respond(tab-land){
+		font-size: 3rem;
+	}
+	@include respond(phone){
+		font-size: 2.5rem;
+	}
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black,0.2);
+    }
+}
+
+.ter-heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pri-para{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+       margin-bottom: 3rem; 
+    }
+}

@@ -1,0 +1,44 @@
+@keyframes fadeleft{
+	0%{
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	80%{
+		transform: translateX(10%);
+	}
+	100%{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes faderight{
+	0%{
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	80%{
+		transform: translateX(-10%);
+	}
+	100%{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes fadefrombottom{
+	0%{
+		transform: translateY(50%);
+		opacity: 0;
+	}
+	60%{
+		transform: translateY(-10%);
+	}
+	80%{
+		transform: translateY(10%);
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
