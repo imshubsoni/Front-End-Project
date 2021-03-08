@@ -1,3 +1,3 @@
 # Front-End-Project
-This is only implemented using HTML and CSS and SCSS.
-Find the project uploaded on netlify here - https://www.imshub18.netlify.app/
+1. This is only implemented using HTML and CSS and SCSS.
+2. Find the project uploaded on netlify here - http://www.imshub18.netlify.app/
